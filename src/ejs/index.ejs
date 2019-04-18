@@ -1,0 +1,165 @@
+<% var title = "IKEDA FUKUI, JAPAN"; var description = "トップのdescription"; %> 
+<% include src/ejs/template/_head %>
+<header id="top" class="l-header">
+  <div class="flex l-header__bar">
+    <h1><a  href="#"><img class="l-header__logo" src="../assets/images/h_logo.png" width="105px" height="40px"></a></h1>
+    <div class="l-header__humberger js-header__humberger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div>
+      <nav class="l-header__nav">
+        <ul>
+          <li class="l-header__list"><a href="#">Top</a></li>
+          <li class="l-header__list"><a href="#">Unforgettable Winter Day!</a></li>
+          <li class="l-header__list"><a href="#">Experience</a></li>
+          <li class="l-header__list"><a href="#">Stories</a></li>
+          <li class="l-header__list"><a href="#">- Wood</a></li>
+          <li class="l-header__list"><a href="#">- Water</a></li>
+          <li class="l-header__list"><a href="#">- Rice</a></li>
+          <li class="l-header__list">Spot Guide</li>
+          <li class="l-header__list"><a href="#">- Dining & Shopping</a></li>
+          <li class="l-header__list"><a href="#">- Sightseeing Spot</a></li>
+          <li class="l-header__list"><a href="#">- Activities</a></li>
+          <li class="l-header__list"><a href="#">- Accommodation</a></li>
+          <li class="l-header__list"><a href="#">Map & Access</a></li>
+          <li class="l-header__list"><a href="#">About this site</a></li>
+          <li class="l-header__list"><a href="#">Sitemap</a></li>
+        </ul>
+      </nav>      
+    </div>
+  </div>
+  <div class="l-header_overlay js-header_overlay"></div>
+</header>
+
+
+
+<div id="main" class="l-main">
+    <div class="swiper-container l-main_keyVisual">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv01.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv02.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv03.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv04.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv05.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv06.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv07.jpg"></div>
+            <div class="swiper-slide"><img class="swiper_img" src="../assets/images/kv08.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+</div>
+<div id="experience" class="l-experience">
+  <div class="l-experience__wrap">
+    <h2 class="c-title__sub">Experience</h2>
+    <div class="c-bar--black"></div>
+      <div class="l-experience__button c-btn c-btnColor--experience"><p class="c-btn__text">Unforgettable Winter Day!</p></div>
+    <ul class="l-experience__menu flex flex_spaceBet">
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/ikeda_feb2018_DSC6314.jpg" width="335px"></a><p>Walking in the snow</p></li>
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/ikeda_sep2017_DSC4965-2-1.jpg" width="335px"></a><p>Fly in the mountain</p></li>
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/ikeda_nov2018_DSC8086.jpg" width="335px"></a><p>Making mochi (rice cakes)</p></li>
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/DSCF9076.jpg" width="335px"></a><p>Soak in a Onsen(hot spring)</p></li>
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/ikeda_feb2018_DSC6745.jpg" width="335px"></a><p>Making Shimenawa</p></li>
+      <li class="l-experience__images"><a href="#"><img src="../assets/images/ikeda_dec2005_DSCF2474.jpg" width="335px"></a><p>Watch the moonlit mountains</p></li>
+    </ul>
+    <div class=c-experience__circleBtn><a href="#">And more</a></div>
+  </div>
+</div>
+
+<div id="stories" class="l-stories">
+  <div class="l-stories__wrap">
+    <h2 class="c-title__sub">Stories<br>-Three Treasures of Ikeda-</h2>
+    <div class="c-bar--black"></div>
+    <ul class="l-stories__list">
+      <li class="flex">
+        <div class="l-stories__images"><img src="../assets/images/top_life_wood.png" width="258px"></div>
+        <div>
+          <p class="p-stories__text">Forests take decades to grow. Cedar is indispensable to house building ...</p>
+          <div class="c-btn c-btnColor--wood"><p class="c-btn__text">Read detail</p></div>
+        </div>
+      </li>
+      <li class="flex">
+        <div class="l-stories__images"><img src="../assets/images/top_life_water.png" width="258px"></div>
+        <div>
+          <p class="p-stories__text">Ikeda Town has a lot of rain. Forested area that occupies 90% of the ...</p>
+          <div class="c-btn c-btnColor--water"><p class="c-btn__text">Read detail</p></div>
+        </div>
+      </li>
+      <li class="flex">
+        <div class="l-stories__images"><img src="../assets/images/top_life_rice.png" width="258px"></div>
+        <div>
+          <p class="p-stories__text">Rice is the staple food of the Japanese people. Rice is grown on ...</p>
+          <div class="c-btn c-btnColor--rice"><p class="c-btn__text">Read detail</p></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="spotGuide" class="l-spotGuide">
+  <div class="l-spotGuide__wrap">
+    <h2 class="c-title__sub">Sopt & Guide</h2>
+    <div class="c-bar--black"></div>
+    <ul class="l-spotGuide__list flex">
+      <li class="l-spotGuide__images"><a href="#"><img src="../assets/images/top_spot_ds.jpg" width="340px"></a><p class="l-spotGuide__text">- Dining & Shopping</p></li>
+      <li class="l-spotGuide__images"><a href="#"><img src="../assets/images/top_spot_ss.jpg" width="340px"></a><p class="l-spotGuide__text">- Sightseeing Spot</p></li>
+      <li class="l-spotGuide__images"><a href="#"><img src="../assets/images/top_spot_act.jpg" width="340px"></a><p class="l-spotGuide__text">- Activities</p></li>
+      <li class="l-spotGuide__images"><a href="#"><img src="../assets/images/top_spot_acm.jpg" width="340px"></a><p class="l-spotGuide__text">- Accommodation</p></li>
+    </ul>
+  </div>
+</div>
+
+<div id="mapAccess" class="l-mapAccess">
+  <div class="l-mapAccess__wrap">
+    <h2 class="c-title__sub">Map & Access</h2>
+    <div class="c-bar--black"></div>
+    <div class=".l-mapAccess__gmap" ><img src="">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414106.8239481942!2d135.86065822225385!3d35.81933376336501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fff55a870acbe11%3A0xa215f311ee70e60!2z56aP5LqV55yM!5e0!3m2!1sja!2sjp!4v1555469009133!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+    <div class="l-mapAccess__button c-btn c-btnColor--map"><a href="#"><p class="c-btn__text">Illust map</p></a></div>
+    <div class="l-mapAccess__map"><img src="../assets/images/top_map_illust.jpg" width="100%"></div>
+    <div class="l-mapAccess__textArea">
+      <p class="p-mapAccess__title">By car</p>
+      <ul class="l-mapAccess__list">
+        <li>About 3.5 hours from Osaka</li>
+        <li>About 2.5 hours from Nagoya<br>(You can use "Takefu IC" at Meishin Expressway to Hokuriku Expressway)</li>
+        <li>About 2 hours from Kanazawa<br>(Use "Sabae IC" at Hokuriku Expressway)</li>
+      </ul>
+      <p class="p-mapAccess__title">By train / To nearest JR Takefu station</p>
+      <ul class="l-mapAccess__list">
+        <li>About 2 hours from Osaka</li>
+        <li>About 2 hours from Nagoya</li>
+        <li>About 1 hour from Kanazawa</li>
+        <li>About 3.5 hours from Tokyo<br>* About 1 hour from "JR Takefu station" by Fukutetsu bus to "Ikeda-cho (Inari bus stop)"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="sns" class="l-sns">
+  <div class="l-sns__wrap">
+    <div>
+      <ul class="flex">
+        <li class="l-sns__icon"><a href="#"><img src="../assets/images/icon_fb.png" width="45px"></a></lic>
+        <li class="l-sns__icon"><a href="#"><img src="../assets/images/icon_ut.png" width="45px"></a></li>
+        <li class="l-sns__icon"><a href="#"><img src="../assets/images/icon_vimeo.png" width="45px"></a></li>
+        <li class="l-sns__icon"><a href="#"><img src="../assets/images/icon_insta.png" width="45px"></a></li>
+        <li class="l-sns__icon"><img src="../assets/images/icon_fukidashi.png" width="150px"></li>
+      </ul>
+    </div>
+  </div>
+</div>  
+
+
+
+<% include src/ejs/template/_footer %>

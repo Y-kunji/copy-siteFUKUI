@@ -1,0 +1,47 @@
+.l-mapAccess{
+  background-color: $colorGray;
+  padding: 60px 0 80px;
+}
+.l-mapAccess__wrap{
+  width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
+}
+.l-mapAccess__gmap{
+  width: 100%;
+  margin: 25px auto 0;
+}
+.l-mapAccess__button{
+  margin: 40px auto 0;
+}
+.l-mapAccess__map{
+  margin: 80px auto 0;
+}
+.l-mapAccess__textArea{
+  width: 80%;
+  margin: 80px auto 0;
+}
+.l-mapAccess__list{
+  margin-top: 20px;
+  li{
+    position: relative;
+    margin-top: 3px;
+    padding-left: 20px;
+    &:first-child{
+      margin-top: 0;
+    }
+    &:last-child{
+      margin-bottom: 20px;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background-color: black;
+    }
+  }
+}

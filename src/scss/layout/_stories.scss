@@ -1,0 +1,28 @@
+.l-stories{
+  background-color: $colorGray;
+  padding: 60px 0 80px;
+}
+.l-stories__wrap{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.l-stories__box{
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.l-stories__list{
+  li{
+    margin-top: 20px;
+    justify-content: space-between;
+    &:nth-child(2){
+      flex-direction: row-reverse;
+      >.l-stories__images{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.l-stories__images{
+  margin-right: 40px;
+}

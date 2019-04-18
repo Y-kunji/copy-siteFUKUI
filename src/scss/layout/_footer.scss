@@ -1,0 +1,23 @@
+.footer {
+  color: #fff;
+}
+.l-footer{
+  background-color: $colorMain;
+  padding-top: 60px;
+}
+.l-footer__contact{
+  text-align: center;
+  color: $colorWhite;
+}
+.l-footer__menu{
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 20px 40px;
+  border-top: 1px solid $colorWhite;
+  font-size: 14px;
+  color: #fff;
+}
+.l-footer__menuText{
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
