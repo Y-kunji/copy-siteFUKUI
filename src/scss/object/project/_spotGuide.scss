@@ -1,0 +1,31 @@
+.p-spotGuide__wrap{
+  width: 100%;
+  max-width: 746px;
+  margin: 0 auto;
+}
+
+.p-spotGuide__list{
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.p-spotGuide__images{
+  position: relative;
+  margin: 0 0 20px 20px;
+  transition: 0.5s;
+  &:nth-child(2n-1){
+    margin-left: 0;
+  }
+  &:hover{
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+}
+
+.p-spotGuide__text{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  color: $colorWhite;
+  font-size: 20px;
+}

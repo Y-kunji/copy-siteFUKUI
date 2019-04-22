@@ -1,29 +1,4 @@
 .l-spotGuide{
   padding: 60px 0 80px;
 }
-.l-spotGuide__wrap{
-  width: 100%;
-  max-width: 746px;
-  margin: 0 auto;
-}
 
-.l-spotGuide__list{
-  margin-top: 2%;
-  justify-content: center;
-}
-
-.l-spotGuide__images{
-  position: relative;
-  margin: 0 0 20px 20px;
-  &:nth-child(2n-1){
-    margin-left: 0;
-  }
-}
-
-.l-spotGuide__text{
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  color: $colorWhite;
-  font-size: 20px;
-}

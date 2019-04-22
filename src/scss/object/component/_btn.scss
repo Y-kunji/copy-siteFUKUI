@@ -5,8 +5,13 @@
   padding: 10px;
   border: 2px solid;
   position: relative;
+  transition: 0.5s;
   //vertical-align: middle;
   //text-align: center;
+  &:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+  }
 }
 .c-btn__text{
   line-height: 50px;
@@ -55,6 +60,7 @@
   text-align: center;
   line-height: 128px;
   vertical-align: middle;
+  transition: 0.5s;
   >a{
     position: absolute;
     top: 0;
@@ -73,5 +79,9 @@
     border-top: 1px solid ;
     border-right: 1px solid ;
     transform: rotate(45deg);
+  }
+  &:hover{
+    opacity: 0.6;
+    transition: 0.5s;
   }
 }
