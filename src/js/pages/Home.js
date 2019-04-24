@@ -6,11 +6,21 @@ export default class Home {
     this.bindevent()
   }
   bindevent(){
+    this.showHeader()
     this.humberger()
     this.swiper()
     this.showContents()
   }
-
+  showHeader(){
+    $(window).on('scroll',()=>{
+      console.log($(window).scrollTop())
+      if($(window).scrollTop()>300){
+        $(".js-header").addClass("is-putColor")
+      }else if($(window).scrollTop()<300){
+        $(".js-header").removeClass("is-putColor")
+      }
+    })
+  }
   humberger(){
     $(".js-header__humberger").on('click',() => {
       $(() => {
@@ -46,14 +56,14 @@ export default class Home {
     });
   }
   showContents(){
-    let countElement = document.querySelectorAll(".is-hide")
+    const countElement = document.querySelectorAll(".is-hide")
     $(window).on("scroll",()=>{
-          for(let i = 0; i < countElement.length; i++) {
-      let triggerMargin = 300;
-      if (window.innerHeight > countElement[i].getBoundingClientRect().top + triggerMargin) {
-        countElement[i].classList.add('is-show');
+      for(let i = 0; i < countElement.length; i++) {
+        const triggerMargin = 100;
+        if (window.innerHeight > countElement[i].getBoundingClientRect().top + triggerMargin) {
+          countElement[i].classList.add('is-show');
+        }
       }
-    }
-  })
-}
+    })
+  }
 }
