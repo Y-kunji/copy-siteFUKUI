@@ -7,7 +7,8 @@ export default class Home {
   }
   bindevent(){
     this.humberger()
-    //this.swiper()
+    this.swiper()
+    this.showContents()
   }
 
   humberger(){
@@ -22,26 +23,37 @@ export default class Home {
       })
     })
   }
-  // swiper(){
-  //   const mySwiper = new Swiper ('.swiper-container', {
-  //     speed: 1000,
+  swiper(){
+    const mySwiper = new Swiper ('.swiper-container', {
+      speed: 1000,
       
-  //     loop: true,
-  //     effect: "fade",
-  //     slidesPerView: 1,
-  //     navigation: {
-  //       nextEl: '.swiper-button-next',
-  //       prevEl: '.swiper-button-prev',
-  //     },
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //     },
-  //     fadeEffect: {
-  //       crossFade: true
-  //     },
-  //     autoplay:{
-  //       delay: 10000,
-  //     }
-  //   });
-  // }
+      loop: true,
+      effect: "fade",
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      fadeEffect: {
+        crossFade: true
+      },
+      autoplay:{
+        delay: 10000,
+      }
+    });
+  }
+  showContents(){
+    let countElement = document.querySelectorAll(".is-hide")
+    $(window).on("scroll",()=>{
+          for(let i = 0; i < countElement.length; i++) {
+      let triggerMargin = 300;
+      if (window.innerHeight > countElement[i].getBoundingClientRect().top + triggerMargin) {
+        countElement[i].classList.add('is-show');
+      }
+    }
+  })
+}
 }

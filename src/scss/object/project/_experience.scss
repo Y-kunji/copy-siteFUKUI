@@ -20,3 +20,16 @@
   }
   
 }
+
+.is-hide{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.is-show{
+  opacity: 1;
+  transition: none;
+}
+.is-up{
+  transform: translateY(10px);
+}
