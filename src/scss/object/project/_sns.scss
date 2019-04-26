@@ -1,9 +1,16 @@
 .p-sns__icon{
+  width: 100%;
+  max-width: 45px;
   margin-right: 20px;
   &:last-child{
     margin: 0;
   }
   &:hover{
     opacity: 0.6;
+  }
+}
+.p-sns__bubble{
+  @include mq(u-sp){
+    display: none;
   }
 }

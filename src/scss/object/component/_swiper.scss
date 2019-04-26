@@ -1,7 +1,9 @@
 .swiper-container {
   width: auto;
-  position: relative;
   z-index: 0;
+  @include mq(u-sp){
+    padding-bottom: 50px;
+  }
 }
 .swiper_img{
   width: 100%;
@@ -33,4 +35,9 @@
 .swiper-pagination-bullet-active{
   opacity: 1;
   background-color: $colorMain;
+}
+.l-main{
+  @include mq(u-sp){
+    position: relative;
+  }
 }

@@ -34,7 +34,7 @@ export default class Home {
     })
   }
   swiper(){
-    const mySwiper = new Swiper ('.swiper-container', {
+    const mySwiper = new Swiper ('.swiper-container', {// eslint-disable-line
       speed: 1000,
       
       loop: true,

@@ -7,6 +7,10 @@
 .p-spotGuide__list{
   margin-top: 25px;
   justify-content: center;
+  @include mq(u-sp){
+    display: flex!important;
+    padding: 0 20px;
+  }
 }
 
 .p-spotGuide__images{
@@ -19,6 +23,13 @@
   &:hover{
     filter: grayscale(100%);
     transition: 0.5s;
+  }
+  @include mq(u-sp){
+    img{
+      width: 100%;
+      max-width: 90vw;
+    }
+    margin:0 0 30px 0;
   }
 }
 

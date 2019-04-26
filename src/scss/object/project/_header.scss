@@ -47,7 +47,7 @@
   padding: 112px 24px;
   z-index: 100;
   transform: translate(310px);
-  transition: all .5s;
+  transition: all .3s;
 }
 
 /*ドロワーが開いたときの薄い背景*/
@@ -104,6 +104,9 @@
 }
 .flex_spaceBet{
   justify-content: space-between;
+}
+.flex_center{
+  justify-content: center;
 }
 .is-putColor{
   background: rgba(0, 68, 74, 0.85);

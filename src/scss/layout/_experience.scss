@@ -4,5 +4,8 @@
   width: 100%;
   max-width: 1068px;
   margin: 0 auto;
+  @include mq(u-sp){
+    padding-top: 30px;
+  }
 }
 

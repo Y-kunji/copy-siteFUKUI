@@ -2,6 +2,9 @@
   width: 100%;
   max-width: 1045px;
   margin: 0 auto;
+  @include mq(u-sp){
+    padding: 0 25px;
+  }
 }
 .p-mapAccess__gmap{
   // width: 100%;
@@ -9,7 +12,6 @@
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
-  height: 0;
   overflow: hidden;
   iframe,object,embed{
     position: absolute;
@@ -17,6 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    max-height: 400px;
   }
 }
 .p-mapAccess__button{

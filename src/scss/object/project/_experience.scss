@@ -9,11 +9,32 @@
 }
 .p-experience__menu{
   margin: 60px 0 0 0;
+  @include mq(u-sp){
+    display: flex!important;
+    padding: 0 20px;
+  }
 }
 .p-experience__images{
-  margin-bottom: 85px;
+  margin:0 20px 85px 0;
   color: $colorMain;
   transition: 0.5s;
+  @include mq(u-sp){
+    img{
+      width: 100%;
+      max-width: 90vw;
+    }
+    margin:0 0 30px 0;
+  }
+  @include mq(sp-pc){
+    &:nth-child(2n){
+      margin: 0 0 85px 0;
+    }
+  }
+  @include mq(o-pc){
+    &:nth-child(3n){
+      margin: 0 0 85px 0;
+    }
+  }
   &:hover{
     opacity: 0.6;
     transition: 0.5s;
@@ -30,6 +51,6 @@
   }
 }
 
-.is-up{
-  transform: translate(0,100px);
-}
+// .is-up{
+//   transform: translate(0,100px);
+// }
